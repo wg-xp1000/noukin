@@ -9,10 +9,8 @@ public class LoadProperties {
 
 	/**
 	 * プロパティファイルをロードする
-	 *
 	 * @param fileName ロードするプロパティファイルの名前
-	 *
-	 * @return ロードしたPropertiesのオブジェクト
+	 * @return 正常終了:Propertiesのオブジェクト 異常終了:null
 	 * */
 	private Properties getProperties(String fileName){
 		final Properties prop=new Properties();
@@ -40,14 +38,12 @@ public class LoadProperties {
 
 	/**
 	 * プロパティファイルからファイルパスを取得
-	 *
 	 * @param key プロパティファイルから値を読み出すキー
-	 *
-	 * @return value 取得した文字列を返却 エラー時はnullを返却
+	 * @return 正常終了:ファイルパス 異常終了:null
 	 * */
 	public String getFilePath(String key){
 
-		final Properties prop = getProperties("filePath.properties");
+		final Properties prop = this.getProperties("filePath.properties");
 		String value = null;
 
 		if(!prop.equals(null)){
@@ -58,14 +54,12 @@ public class LoadProperties {
 
 	/**
 	 * プロパティファイルから作成個数を取得
-	 *
 	 * @param key プロパティファイルから値を読み出すキー
-	 *
-	 * @return value 取得した値をint型に変換して返却 エラー時は-1を返却
+	 * @return value 正常終了:ダンジョン作成数 異常終了:-1
 	 * */
 	public int getCreateNum(String key){
 
-		final Properties prop = getProperties("createDungeonNum.properties");
+		final Properties prop = this.getProperties("createDungeonNum.properties");
 		String value = null;
 		int ret = -1;
 
@@ -81,14 +75,12 @@ public class LoadProperties {
 
 	/**
 	 * プロパティファイルから次レベル経験値を取得
-	 *
 	 * @param key プレイヤーキャラのレベル
-	 *
-	 * @return 取得した経験値の値 値が取得できなかったら-1を返す
+	 * @return 正常終了:次レベルの経験値 異常終了:-1
 	 * */
 	public int getExperienceTable(String key){
 
-		final Properties prop = getProperties("experienceTable.properties");
+		final Properties prop = this.getProperties("experienceTable.properties");
 		String value = null;
 		int ret = -1;
 
@@ -104,13 +96,11 @@ public class LoadProperties {
 
 	/**
 	 * プロパティファイルからアイテムドロップパワーの閾値を取得
-	 *
 	 * @param key アイテムドロップパワー
-	 *
-	 * @return 取得したアイテムドロップパワーの閾値
+	 * @return 正常終了:アイテムドロップパワーの閾値 異常終了:-1
 	 * */
 	public int getItepDropPower(String key){
-		final Properties prop = getProperties("itemGenerate.properties");
+		final Properties prop = this.getProperties("itemGenerate.properties");
 		String value = null;
 		int ret = -1;
 
@@ -126,14 +116,11 @@ public class LoadProperties {
 
 	/**
 	 * プロパティファイルからアイテム品質決定の値を取得
-	 *
 	 * @param key アイテム品質のキー
-	 *
-	 * @return 取得したアイテム品質決定の値
-	 *
+	 * @return 正常終了:アイテム品質 異常終了:-1
 	 * */
 	public int getItemGeneratePower(String key){
-		final Properties prop = getProperties("itemGeneratePower.properties");
+		final Properties prop = this.getProperties("itemGeneratePower.properties");
 		String value = null;
 		int ret = -1;
 

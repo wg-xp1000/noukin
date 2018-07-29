@@ -2,12 +2,13 @@ package struct.world;
 
 import java.util.HashMap;
 
+import struct.creature.MonsterInfo;
 import struct.item.equips.artifact.ArtifactInfo;
 import struct.town.TownInfo;
 
 public class WorldInfo {
 
-	private static WorldInfo worldInfo=new WorldInfo();
+	private final static WorldInfo worldInfo=new WorldInfo();
 
 	private WorldInfo(){}
 

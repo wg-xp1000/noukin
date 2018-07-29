@@ -1,6 +1,6 @@
 package manage;
 
-import struct.world.MonsterInfo;
+import struct.creature.MonsterInfo;
 import util.CreateRandomNumber;
 import util.GetMonsterInfo;
 import util.LoadProperties;

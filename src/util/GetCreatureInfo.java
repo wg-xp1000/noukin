@@ -1,6 +1,6 @@
 package util;
 
-import struct.CreatureInfo;
+import struct.creature.CreatureInfo;
 public class GetCreatureInfo {
 
 	public int getNumAtackDice(CreatureInfo creature){

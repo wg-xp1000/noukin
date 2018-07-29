@@ -6,7 +6,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-import struct.AtInfo;
+import struct.creature.AtInfo;
 
 public class XmlFileOperation {
 
@@ -95,15 +95,15 @@ public class XmlFileOperation {
 		Element item20 = doc.createElement("item");
 
 		//PCの性能を格納
-		name.appendChild(doc.createTextNode(pcInfo.name));
-		level.appendChild(doc.createTextNode(pcInfo.level.toString()));
-		experience.appendChild(doc.createTextNode(pcInfo.experience.toString()));
-		race.appendChild(doc.createTextNode(pcInfo.race.toString()));
-		job.appendChild(doc.createTextNode(pcInfo.job.toString()));
-		personality.appendChild(doc.createTextNode(pcInfo.personality.toString()));
+		name.appendChild(doc.createTextNode(pcInfo.getName()));
+		level.appendChild(doc.createTextNode((String.valueOf(pcInfo.getLevel()))));
+		experience.appendChild(doc.createTextNode(String.valueOf(pcInfo.getExperience())));
+		race.appendChild(doc.createTextNode(String.valueOf(pcInfo.getRace())));
+		job.appendChild(doc.createTextNode(String.valueOf(pcInfo.getJob())));
+		personality.appendChild(doc.createTextNode(String.valueOf(pcInfo.getPersonality())));
 
 		//PCの装備品を格納
-		head.appendChild(doc.createTextNode(pcInfo.equips[0].toString()));
+		head.appendChild(doc.createTextNode(pcInfo.getHead()));
 		neck.appendChild(doc.createTextNode(pcInfo.equips[1].toString()));
 
 		//PCの所持品を格納

@@ -1,6 +1,6 @@
 package manage;
 
-import struct.AtInfo;
+import struct.creature.AtInfo;
 import struct.item.ItemTypeInfo;
 import struct.item.equips.EquipmentItemInfo;
 import util.SetAtInfo;

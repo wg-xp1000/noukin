@@ -1,6 +1,4 @@
-package struct.world;
-
-import struct.CreatureInfo;
+package struct.creature;
 
 public class MonsterInfo extends CreatureInfo{
 
@@ -23,18 +21,28 @@ public class MonsterInfo extends CreatureInfo{
 	 * @param personality モンスターの性格 1:強気 2:普通 3:弱気
 	 * */
 
-	public String name;
-	public Integer level;
-	public Integer hitPoint;
-	public Integer numAtackDice;
-	public Integer numAtackDiceMen;
-	public Integer fixedAtack;
-	public Integer numDefenceDice;
-	public Integer numDefenceDiceMen;
-	public Integer fixedDefence;
-	public int experience;
-	public int itemDropPower;
+	private int itemDropPower;
 	public int itemGeneratePower;
 	public int personality;
+
+	public int getItemDropPower() {
+		return itemDropPower;
+	}
+	public void setItemDropPower(int itemDropPower) {
+		this.itemDropPower = itemDropPower;
+	}
+	public int getItemGeneratePower() {
+		return itemGeneratePower;
+	}
+	public void setItemGeneratePower(int itemGeneratePower) {
+		this.itemGeneratePower = itemGeneratePower;
+	}
+	public int getPersonality() {
+		return personality;
+	}
+	public void setPersonality(int personality) {
+		this.personality = personality;
+	}
+
 
 }
