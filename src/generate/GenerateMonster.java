@@ -1,4 +1,4 @@
-package generation;
+package generate;
 
 final public class GenerateMonster {
 

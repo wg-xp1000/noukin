@@ -1,6 +1,6 @@
 package util;
 
-import struct.world.MonsterInfo;
+import struct.creature.MonsterInfo;
 
 public class GetMonsterInfo {
 

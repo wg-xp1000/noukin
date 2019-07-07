@@ -2,9 +2,9 @@ package util;
 
 import java.util.HashMap;
 
+import struct.creature.MonsterInfo;
 import struct.town.TownInfo;
 import struct.world.DungeonInfo;
-import struct.world.MonsterInfo;
 import struct.world.WorldInfo;
 
 public class SetWorldInfo {

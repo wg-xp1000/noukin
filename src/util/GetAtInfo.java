@@ -2,7 +2,7 @@ package util;
 
 import java.util.ArrayList;
 
-import struct.AtInfo;
+import struct.creature.AtInfo;
 import struct.item.ItemInfo;
 import struct.item.equips.EquipmentItemInfo;
 

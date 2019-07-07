@@ -1,7 +1,7 @@
 package util;
 
+import struct.creature.MonsterInfo;
 import struct.item.ItemInfo;
-import struct.world.MonsterInfo;
 
 public class CreateItem {
 

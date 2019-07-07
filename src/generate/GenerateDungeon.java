@@ -1,8 +1,8 @@
-package generation;
+package generate;
 
 import java.util.HashMap;
 
-import struct.AtInfo;
+import struct.creature.AtInfo;
 import struct.world.DungeonInfo;
 import struct.world.WorldInfo;
 import util.CreateName;
